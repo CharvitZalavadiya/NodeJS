@@ -29,7 +29,7 @@ image
 
 # 06 : Hello World
 
-- Executing JavaScript with Node
+-- Executing JavaScript with Node\
 
 1. Node REPL
    - • Read
@@ -49,8 +49,8 @@ image
 
 # 8 : Modules
 
-- A module is an encapsulated and reusable chunk of code that has its own context
-- In Node js, each file is treated as a separate module
+-- A module is an encapsulated and reusable chunk of code that has its own context\
+-- In Node js, each file is treated as a separate module\
 **Types of Modules**
     - Local modules - Modules that we create in our application
     - Built-in modules - Modules that Node.js ships with out of the box
@@ -70,7 +70,7 @@ image
 
 # 10 : Module Exports
 
-- Module export name and import in index file name are not necessary to be same they can be different also or same also
+-- Module export name and import in index file name are not necessary to be same they can be different also or same also\
 
 # 11 : Module Scope
 
@@ -83,30 +83,30 @@ image
     - Each loaded module in Node. js is wrapped with an lIFE that provides private scoping of code
     - lIFE allows you to repeat variable or function names without any conflicts
 
-- IIFE = Imediate Invoke Function Expression
+-- IIFE = Imediate Invoke Function Expression\
 
 # 12 : Module Wrapper
 
-- Every module in node js gets wrapped in an lIFE before being loaded
-- IIFE helps keep top-level variables scoped to the module rather than the global object
-- The lIFE that wraps every module contains 5 parameters which are pretty important for the functioning of a module
+-- Every module in node js gets wrapped in an lIFE before being loaded\
+-- IIFE helps keep top-level variables scoped to the module rather than the global object\
+-- The lIFE that wraps every module contains 5 parameters which are pretty important for the functioning of a module\
 
-- (function(exports, require, module, **filename, **dirname) {
-  const superHero = "Batman";
-  console.log (superHero) ;
+-- (function(exports, require, module, **filename, **dirname) {\
+  const superHero = "Batman";\
+  console.log (superHero) ;\
   })
 
 # 13 : Module Caching
 
-- See the code comments in file number 13
+-- See the code comments in file number 13\
 
 # 14 : Import Export Patterns
 
-- See the code comments in file number 14 and 06
+-- See the code comments in file number 14 and 06\
 
 # 15 : Module.exports vs Exports
 
-- See the code comments in file number 15
+-- See the code comments in file number 15\
 
 # 16 : ES Modules
 
@@ -132,7 +132,7 @@ image
     - If it is a default export, we can assign any name while importing
     - If it is a named export, the import name must be the same
 
-- See the code of both file 16
+-- See the code of both file 16\
 
 # 17 : Importing JSON and Watch Mode
 
@@ -140,15 +140,15 @@ image
     - JavaScript Object Notation
     - A data interchange format commonly used with web servers
 
-- To enter watch mode hit the command "node --watch filename"
-- Watch mode is the new feature from node in that when there is a change in your file then it automatically runs the file you need not to have press the run file button
-- To exit watch mode hit the command "ctrl + c"
+-- To enter watch mode hit the command "node --watch filename"\
+-- Watch mode is the new feature from node in that when there is a change in your file then it automatically runs the file you need not to have press the run file button\
+-- To exit watch mode hit the command "ctrl + c"\
 
 # 18 : Built-in Modules
 
-- Modules that Node.js ships with
-- Also referred to as core modules
-- Import the module before you can use it
+-- Modules that Node.js ships with\
+-- Also referred to as core modules\
+-- Import the module before you can use it\
   • path
   • events
   • fs
@@ -157,7 +157,7 @@ image
 
 # 19 : Path Modules
 
-- See the only code of file 06 for from line 89
+-- See the only code of file 06 for from line 89\
 
 **node: Protocol**
     - Makes it perfectly clear that the import is a Node.js builtin module
@@ -173,12 +173,12 @@ image
 
 **Types of Callbacks :**
   *Synchronous callbacks*
-        - A callback which is executed immediately is called a synchronous callback
+        -- A callback which is executed immediately is called a synchronous callback\
   *Asynchronous callbacks*
-        - A callback that is often used to continue or resume code execution after an asynchronous operation has completed
-        - Callbacks are used to delay the execution of a function until a particular time or event has occurred
-        - In Node.js have an asynchronous nature to prevent blocking of execution
-        - Ex: reading data from a file, fetching data from a database or network request
+        -- A callback that is often used to continue or resume code execution after an asynchronous operation has completed\
+        -- Callbacks are used to delay the execution of a function until a particular time or event has occurred\
+        -- In Node.js have an asynchronous nature to prevent blocking of execution\
+        -- Ex: reading data from a file, fetching data from a database or network request\
 
 # 21 : Events Module
 
