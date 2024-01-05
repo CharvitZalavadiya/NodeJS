@@ -19,7 +19,8 @@ image
 - Real-time applications
 - Streaming services
 - CLI tools
-- Multiplayer games\
+- Multiplayer games
+
 
 - Node.js allows you to build complex and powerful applications\
 - Node js is an open-source, cross-platform JavaScript runtime environment\
@@ -32,10 +33,10 @@ image
 -- Executing JavaScript with Node\
 
 1. Node REPL
-   - • Read
-   - • Evaluate
-   - • Print
-   - • Loop
+   - Read
+   - Evaluate
+   - Print
+   - Loop
 
 2. Executing code in a JavaScript file in the command line
 
