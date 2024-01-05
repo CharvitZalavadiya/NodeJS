@@ -446,7 +446,7 @@ image
     - For one final time in the same loop, the micro task queues are executed. nextTick queue followed by promise queue. 
     - If there are more callbacks to be processed, the loop is kept alive for one more run and the same steps are repeated - On the other hand, if all callbacks are executed and there is no more code to process, the event loop exits.
 
-**Few Questions**
+**Few Questions**\
     *Whenever an async task completes in libuv, at what point does Node decide to run the associated callback function on the call stack?*
 - Callback functions are executed only when the call stack is empty. The normal flow of execution fill not be interrupted to run a callback function\
     *What about async methods like setTimeout and setinterval which also delay the execution of a callback function?*
@@ -520,41 +520,41 @@ image
 # 49 : What is npm?
 
 **What is npm?**
-    - It is the world's largest software library
-    - It is a software package manager
+1. It is the world's largest software library
+2. It is a software package manager
 
 **npm is a Software Library**
-    - npm is a library or a registry which contains code packages written by various developers
-    - It is a large public database of JavaScript code that developers from all over the world can use to share and borrow code
-    - If you author a "code package", you can publish it to the npm registry for others to use
-    - If you come across a code package that is authored by someone else and solves the problem you have at hand, you can borrow that code without having to reinvent the wheel
+1. npm is a library or a registry which contains code packages written by various developers
+2. It is a large public database of JavaScript code that developers from all over the world can use to share and borrow code
+3. If you author a "code package", you can publish it to the npm registry for others to use
+4. If you come across a code package that is authored by someone else and solves the problem you have at hand, you can borrow that code without having to reinvent the wheel
 
 **npm is a Software Package Manager**
-    - A command line interface tool that lets us manage packages in a project
+1. A command line interface tool that lets us manage packages in a project
 
 **npm and Other Package Managers**
-    - Other package managers such as pnpm and Yarn
-    - npm is the default package manager for Node.js
+1. Other package managers such as pnpm and Yarn
+2. npm is the default package manager for Node.js
 
 # 50 : Package.json
 
 **What?**
-     - package json is npm's configuration file - It is a json file that typically lives in the root directory of your package and holds various metadata relevant to the package
+1. package json is npm's configuration file - It is a json file that typically lives in the root directory of your package and holds various metadata relevant to the package
 
 **Why?**
-    - package.json is the central place to configure and describe how to interact with and run your package - It is primarily used by the прт CLI
+1. package.json is the central place to configure and describe how to interact with and run your package - It is primarily used by the npm CLI
 
-custom package :
-{
-    "name": "Charvit Zalavadiya",
-    "version": "1.0.0",
-    "description": "Welcome to NodeJS packages",
-    "keywords": [
-    "CZ",
-    "greet"
-    ],
-    "main": "50-index.js"
-}
+- custom package :
+{\
+    "name": "Charvit Zalavadiya",\
+    "version": "1.0.0",\
+    "description": "Welcome to NodeJS packages",\
+    "keywords": [\
+        "CZ",\
+        "greet"\
+    ],\
+    "main": "50-index.js"\
+}\
 
 - To directly get the default package file hit the command "npm init --y"
 
@@ -571,26 +571,26 @@ custom package :
 - If you want to install dependency at specific version then write the version like this: npm install upper-case@2.0.0
 
 **Semantic Versioning**
-  - SemVer - is one of the most widely adopted versioning systems
-  - A simple set of rules and requirements that dictate how version numbers are assigned and incremented
-  - It is crucial to keep a semantic and historical track of changes
-  - Version numbers and the way they change convey meaning about the underlying code and what has been modified from one version to the next
+1. SemVer - is one of the most widely adopted versioning systems
+2. A simple set of rules and requirements that dictate how version numbers are assigned and incremented
+3. It is crucial to keep a semantic and historical track of changes
+4. Version numbers and the way they change convey meaning about the underlying code and what has been modified from one version to the next
 
 **Versioning Rules**
-  - When you fix a bug and the code stays backwards-compatible you increment the patch version.
-  - For example 1.1.1 to 1.1.2
-  - When you add new functionality but the code still stays backwards-compatible, you increment the minor version
-  - You also reset the patch version to zero
-  - For example 1.1.1 to 1.2.0
-  - When you make changes and the code is no more backwards compatible, you increment the major version
-  - You have to reset the minor and patch version to zero
-  - For example 1.1.1 to 2.0.0.
+1. When you fix a bug and the code stays backwards-compatible you increment the patch version.
+2. For example 1.1.1 to 1.1.2
+3. When you add new functionality but the code still stays backwards-compatible, you increment the minor version
+4. You also reset the patch version to zero
+5. For example 1.1.1 to 1.2.0
+6. When you make changes and the code is no more backwards compatible, you increment the major version
+7. You have to reset the minor and patch version to zero
+8. For example 1.1.1 to 2.0.0.
 
 **Few more points**
-  - Semantic versioning always starts with 0.1.0
-  - 0.Y.Z (a major version of zero) is used for initial development
-  - When the code is production-ready, you increment to version 1.0.0
-  - Even the simplest of changes has to be done with an increase in the version number
+1. Semantic versioning always starts with 0.1.0
+2. 0.Y.Z (a major version of zero) is used for initial development
+3. When the code is production-ready, you increment to version 1.0.0
+4. Even the simplest of changes has to be done with an increase in the version number
 
 # 55 : Global Packages
 
