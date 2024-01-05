@@ -174,13 +174,13 @@ image
 3. A function can also be returned as values from other functions
 
 **Types of Callbacks :**
-  *Synchronous callbacks*
-        1. A callback which is executed immediately is called a synchronous callback
-  *Asynchronous callbacks*
-        1. A callback that is often used to continue or resume code execution after an asynchronous operation has completed
-        2. Callbacks are used to delay the execution of a function until a particular time or event has occurred
-        3. In Node.js have an asynchronous nature to prevent blocking of execution
-        4. Ex: reading data from a file, fetching data from a database or network request
+  *Synchronous callbacks*\
+        1. A callback which is executed immediately is called a synchronous callback\
+  *Asynchronous callbacks*\
+        1. A callback that is often used to continue or resume code execution after an asynchronous operation has completed\
+        2. Callbacks are used to delay the execution of a function until a particular time or event has occurred\
+        3. In Node.js have an asynchronous nature to prevent blocking of execution\
+        4. Ex: reading data from a file, fetching data from a database or network request\
 
 # 21 : Events Module
 
