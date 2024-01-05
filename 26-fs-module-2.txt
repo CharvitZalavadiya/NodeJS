@@ -1,0 +1,1 @@
+Synchronous writing in new file you can add content in existing file also by giving that file's path. Asynchronous writing in existing file
