@@ -14,12 +14,12 @@ image
 # 5 : What is Node.js?
 
 **What can you build with Node.js?**
-    - Traditional websites
-    - Backend services like APIs
-    - Real-time applications
-    - Streaming services
-    - CLI tools
-    - Multiplayer games
+- Traditional websites
+- Backend services like APIs
+- Real-time applications
+- Streaming services
+- CLI tools
+- Multiplayer games
 
 - Node.js allows you to build complex and powerful applications
 - Node js is an open-source, cross-platform JavaScript runtime environment
