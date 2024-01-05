@@ -19,13 +19,13 @@ image
 - Real-time applications
 - Streaming services
 - CLI tools
-- Multiplayer games
+- Multiplayer games\
 
--- Node.js allows you to build complex and powerful applications\
--- Node js is an open-source, cross-platform JavaScript runtime environment\
--- It is not a language, it is not a framework and capable of executing JavaScript code outside a browser\
--- It can execute not only the standard ECMAScript language but also new features that are made available through C++ bindings using the V8 engine\
--- It consists of C++ files which form the core features and JavaScriptfiles which expose common utilities and some of the C++ features for consumption
+- Node.js allows you to build complex and powerful applications\
+- Node js is an open-source, cross-platform JavaScript runtime environment\
+- It is not a language, it is not a framework and capable of executing JavaScript code outside a browser\
+- It can execute not only the standard ECMAScript language but also new features that are made available through C++ bindings using the V8 engine\
+- It consists of C++ files which form the core features and JavaScriptfiles which expose common utilities and some of the C++ features for consumption
 
 # 06 : Hello World
 
@@ -51,6 +51,7 @@ image
 
 -- A module is an encapsulated and reusable chunk of code that has its own context\
 -- In Node js, each file is treated as a separate module\
+
 **Types of Modules**\
     -- Local modules - Modules that we create in our application\
     -- Built-in modules - Modules that Node.js ships with out of the box\
