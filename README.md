@@ -32,7 +32,7 @@ image
 
 - Executing JavaScript with Node
 
-- Node REPL
+**Node REPL**
    1. Read
    2. Evaluate
    3. Print
