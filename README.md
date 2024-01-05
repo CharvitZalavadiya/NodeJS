@@ -173,7 +173,7 @@ image
 2. A function can be passed as an argument to a function
 3. A function can also be returned as values from other functions
 
-**Types of Callbacks :**
+**Types of Callbacks :**\
   *Synchronous callbacks*\
         1. A callback which is executed immediately is called a synchronous callback\
   *Asynchronous callbacks*\
