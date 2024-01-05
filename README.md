@@ -14,49 +14,49 @@ image
 # 5 : What is Node.js?
 
 **What can you build with Node.js?**
-- Traditional websites
-- Backend services like APIs
-- Real-time applications
-- Streaming services
-- CLI tools
-- Multiplayer games
+1. Traditional websites
+2. Backend services like APIs
+3. Real-time applications
+4. Streaming services
+5. CLI tools
+6. Multiplayer games
 
 
-- Node.js allows you to build complex and powerful applications\
-- Node js is an open-source, cross-platform JavaScript runtime environment\
-- It is not a language, it is not a framework and capable of executing JavaScript code outside a browser\
-- It can execute not only the standard ECMAScript language but also new features that are made available through C++ bindings using the V8 engine\
+- Node.js allows you to build complex and powerful applications
+- Node js is an open-source, cross-platform JavaScript runtime environment
+- It is not a language, it is not a framework and capable of executing JavaScript code outside a browser
+- It can execute not only the standard ECMAScript language but also new features that are made available through C++ bindings using the V8 engine
 - It consists of C++ files which form the core features and JavaScriptfiles which expose common utilities and some of the C++ features for consumption
 
 # 06 : Hello World
 
--- Executing JavaScript with Node\
+- Executing JavaScript with Node
 
-1. Node REPL
-   - Read
-   - Evaluate
-   - Print
-   - Loop
+- Node REPL
+   1. Read
+   2. Evaluate
+   3. Print
+   4. Loop
 
-2. Executing code in a JavaScript file in the command line
+- Executing code in a JavaScript file in the command line
 
 # 7 : Browser vs Node.js
 
--- In the browser, most of the time what you are doing is interacting with the DOM, or other Web Platform APIs like Cookies. You don't have the document, window and all the other objects that are provided by the browser\
--- In the browser, we don't have all the nice APls that Node.js provides through its modules\
--- For example the filesystem access functionality\
--- With Node.js, you control the environment\
--- With a browser you are at the mercy of what the users choose
+- In the browser, most of the time what you are doing is interacting with the DOM, or other Web Platform APIs like Cookies. You don't have the document, window and all the other objects that are provided by the browser
+- In the browser, we don't have all the nice APls that Node.js provides through its modules
+- For example the filesystem access functionality
+- With Node.js, you control the environment
+- With a browser you are at the mercy of what the users choose
 
 # 8 : Modules
 
--- A module is an encapsulated and reusable chunk of code that has its own context\
--- In Node js, each file is treated as a separate module\
+- A module is an encapsulated and reusable chunk of code that has its own context
+- In Node js, each file is treated as a separate module
 
-**Types of Modules**\
-    -- Local modules - Modules that we create in our application\
-    -- Built-in modules - Modules that Node.js ships with out of the box\
-    -- Third party modules - Modules written by other developers that we can use in our application
+**Types of Modules**
+   1. Local modules - Modules that we create in our application
+   2. Built-in modules - Modules that Node.js ships with out of the box
+   3. Third party modules - Modules written by other developers that we can use in our application
 
 # 9 : Local Modules
 
