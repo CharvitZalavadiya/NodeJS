@@ -173,14 +173,14 @@ image
 2. A function can be passed as an argument to a function
 3. A function can also be returned as values from other functions
 
-**Types of Callbacks :**\
-  *Synchronous callbacks*\
-        1. A callback which is executed immediately is called a synchronous callback\
-  *Asynchronous callbacks*\
-        1. A callback that is often used to continue or resume code execution after an asynchronous operation has completed\
-        2. Callbacks are used to delay the execution of a function until a particular time or event has occurred\
-        3. In Node.js have an asynchronous nature to prevent blocking of execution\
-        4. Ex: reading data from a file, fetching data from a database or network request\
+**Types of Callbacks :**
+  *Synchronous callbacks*
+- A callback which is executed immediately is called a synchronous callback
+  *Asynchronous callbacks*
+- A callback that is often used to continue or resume code execution after an asynchronous operation has completed
+- Callbacks are used to delay the execution of a function until a particular time or event has occurred
+- In Node.js have an asynchronous nature to prevent blocking of execution
+- Ex: reading data from a file, fetching data from a database or network request
 
 # 21 : Events Module
 
@@ -189,11 +189,11 @@ image
 - Using the events module, we can dispatch our own custom events and respond to those custom events in a non-blocking manner
 
 **Events Module - Scenario :**
-    - Let's say you're feeling hungry and head out to Dominos to have pizza
-    - At the counter, you place your order for a pizza
-    - When you place the order, the line cook sees the order on the screen and bakes the pizza for you
-    - Order being placed is the event
-    - Baking a pizza is a response to that event
+1. Let's say you're feeling hungry and head out to Dominos to have pizza
+2. At the counter, you place your order for a pizza
+3. When you place the order, the line cook sees the order on the screen and bakes the pizza for you
+4. Order being placed is the event
+5. Baking a pizza is a response to that event
 
 - Go through code in file 06 from line 123
 
@@ -204,48 +204,48 @@ image
 # 23 : Character Sets and Encoding
 
 **Character in binary format :**
-    - V?
-    - Computers will first convert the character to a number, then convert that number to its binary representation
-    - Computers will first convert V to a number that represents V
-    - 86 is the numeric representation of the character V
-    - It is also called character code
-    - How does the computer know V should be represented as 86
+1. V?
+2. Computers will first convert the character to a number, then convert that number to its binary representation
+3. Computers will first convert V to a number that represents V
+4. 86 is the numeric representation of the character V
+5. It is also called character code
+6. How does the computer know V should be represented as 86
 
 **Character Sets :**
-    - Character Sets are predefined lists of characters represented by numbers
-    - Popular character sets - Unicode and ASCIl
-    - Unicode character set dictates that 86 should represent character V
+1. Character Sets are predefined lists of characters represented by numbers
+2. Popular character sets - Unicode and ASCIl
+3. Unicode character set dictates that 86 should represent character V
 
 **Character Encoding :**
-    - Character encoding dictates how to represent a number in a character set as binary data before it can be stored in a computer
-    - It dictates how many bits to use to represent the number
-    - Example of a character encoding system is UTF-8
-    - UTF-8 states that characters should be encoded in bytes (8 bits)
-    - Eight 1s or 0s should be used to represent the code of any character in binary
-    - 4 => 100 => 00000100
-    - V => 86 => 01010110
+1. Character encoding dictates how to represent a number in a character set as binary data before it can be stored in a computer
+2. It dictates how many bits to use to represent the number
+3. Example of a character encoding system is UTF-8
+4. UTF-8 states that characters should be encoded in bytes (8 bits)
+5. Eight 1s or 0s should be used to represent the code of any character in binary
+6. 4 => 100 => 00000100
+7. V => 86 => 01010110
 
 - Similar guaidelines also exist on how images and videos should be encoded and stored in binary format
 
 # 24 : Streams and Buffers
 
 **Streams :**
-    - Ex: a stream of data over the internet being moved from one computer to another
+1. Ex: a stream of data over the internet being moved from one computer to another
         - A stream is a sequence of data that is being moved from one point to another over time
-    - Ex: a stream of data being transferred from one file to another within the same computer
+2. Ex: a stream of data being transferred from one file to another within the same computer
         - Process streams of data in chunks as they arrive instead of entire data to be available before processing
-    - Ex: watching a video on YouTube
+3. Ex: watching a video on YouTube
         - The data arrives in chunks and you watch in chunks while the rest of the data arrives over time
-    - Ex: transferring file contents from fileA to fileB
+4. Ex: transferring file contents from fileA to fileB
         - The contents arrive in chunks and you transfer in chunks while the remaining contents arrive over time
 
 - Prevents unnecessary data downloads and memory usage
 
 **Buffers :**
-    - Area where people wait is nothing but the buffer Node.js cannot control the pace at which data arrives in the stream
-    - It can only decide when is the right time to send the data for processing
-    - If there is data already processed or too little data to process, Node puts the arriving data in a buffer
-    - It is an intentionally small area that Node maintains in the runtime to process a stream of data
+1. Area where people wait is nothing but the buffer Node.js cannot control the pace at which data arrives in the stream
+2. It can only decide when is the right time to send the data for processing
+3. If there is data already processed or too little data to process, Node puts the arriving data in a buffer
+4. It is an intentionally small area that Node maintains in the runtime to process a stream of data
 
 - Go through code and get data from websites
 
@@ -254,16 +254,16 @@ image
 - JavaScript is a synchronous, blocking, single-threaded language
 
 **Synchronous :**
-    - If we have two functions which log messages to the console, code executes top down, with only one line executing at any given time
+1. If we have two functions which log messages to the console, code executes top down, with only one line executing at any given time
 
 **Blocking :**
-    - No matter how long a previous process takes, the subsequent processes won't kick off until the former is completed
-    - Web app runs in a browser and it executes an intensive chunk of code without returning the browser, the browser can appear to be frozen
+1. No matter how long a previous process takes, the subsequent processes won't kick off until the former is completed
+2. Web app runs in a browser and it executes an intensive chunk of code without returning the browser, the browser can appear to be frozen
 
 **Single-threaded :**
-    - A thread is simply a process that program can use to run a task
-    - Each thread can only do one task
-    - JavaScript has just the one thread called the main thread for executing any code
+1. A thread is simply a process that program can use to run a task
+2. Each thread can only do one task
+3. JavaScript has just the one thread called the main thread for executing any code
 
 - fetchDataFromDB('endpoint') could take 1 second or even more
 - During that time, we can't run any further code
@@ -276,10 +276,10 @@ image
 - You can let your code do several things at the same time without stopping or blocking your main thread
 
 **Summary :**
-    - JavaScript is a synchronous, blocking, single-threaded language
-    - This nature however is not beneficial for writing apps
-    - We want non-blocking asynchronous behaviour which is made possible by a browser for FE and Node.js for backend
-    - This style of programming where we don't block the main JavaScript thread is fundamental to Node.js and is at the heart of how some of the built-in module code is written
+1. JavaScript is a synchronous, blocking, single-threaded language
+2. This nature however is not beneficial for writing apps
+3. We want non-blocking asynchronous behaviour which is made possible by a browser for FE and Node.js for backend
+4. This style of programming where we don't block the main JavaScript thread is fundamental to Node.js and is at the heart of how some of the built-in module code is written
 
 # 26 : fs Module
 
@@ -298,14 +298,14 @@ image
 # 28 : Streams
 
 **Types of Streams :**
-    - Readable streams from which data can be read
-    - Writable streams to which we can write data
-    - Duplex streams that are both Readable and Writable
-    - Transform streams that can modify or transform the data as it is written and read
-    - Ex: Reading from a file as readable stream
-    - Ex: Writing to a file as writable stream
-    - Ex: Sockets as a duplex stream
-    - Ex: File compression where you can write compressed data and read
+1. Readable streams from which data can be read
+2. Writable streams to which we can write data
+3. Duplex streams that are both Readable and Writable
+4. Transform streams that can modify or transform the data as it is written and read
+5. Ex: Reading from a file as readable stream
+6. Ex: Writing to a file as writable stream
+7. Ex: Sockets as a duplex stream
+8. Ex: File compression where you can write compressed data and read
 
 - De-compressed data to and from a file as a transform stream
 
@@ -317,21 +317,21 @@ image
 # 30 : HTTP Module
 
 **How the web works :**
-    - Computers connected to the internet are called clients and servers
-    - Clients are internet-connected devices such as computers or mobile phones along with web-accessing software available on those devices such as a web browser
-    - Servers on the other hand are computers that store web pages, sites, or apps
+1. Computers connected to the internet are called clients and servers
+2. Clients are internet-connected devices such as computers or mobile phones along with web-accessing software available on those devices such as a web browser
+3. Servers on the other hand are computers that store web pages, sites, or apps
 
 **НТТР :**
-    - HTTP stands for Hypertext Transfer Protocol
-    - A protocol that defines a format for clients and servers to speak to each other
-    - The client sends an HTTP request and the server responds with an HTTP response
+1. HTTP stands for Hypertext Transfer Protocol
+2. A protocol that defines a format for clients and servers to speak to each other
+3. The client sends an HTTP request and the server responds with an HTTP response
 
 **HTTP and Node :**
-    - We can create a web server using Node.js
-    - Node.js has access to operating system functionality like networking
-    - Node has an event loop to run tasks asynchronously and is perfect for creating web servers that can simultaneously handle large volumes of requests
-    - The node server we create should still respect the HTTP format
-    - The HTTP module allows creation of web servers that can transfer data over НТТР
+1. We can create a web server using Node.js
+2. Node.js has access to operating system functionality like networking
+3. Node has an event loop to run tasks asynchronously and is perfect for creating web servers that can simultaneously handle large volumes of requests
+4. The node server we create should still respect the HTTP format
+5. The HTTP module allows creation of web servers that can transfer data over НТТР
 
 # 31 : Creating a Node Server
 
@@ -356,8 +356,7 @@ image
 
 # 36 : Web Framework
 
-- A framework simply abstracts the lower level code allowing you to focus on the
-  requirements than the code itself
+- A framework simply abstracts the lower level code allowing you to focus on the requirements than the code itself
 - For example, Angular, React, Vue are all framework/libraries that help you build user interfaces without having to rely on the lower level DOM API in JS
 - There are frameworks to build web or mobile applications without having to rely on the HTTP module in node.js
 - Ex: express, nest, hapi, koa and sails
@@ -370,36 +369,36 @@ image
 # 38 : libuv
 
 **What?**
-    - libuv is a cross platform open source library written in C language
+1. libuv is a cross platform open source library written in C language
 
 **Why?**
-    - handles asynchronous non-blocking operations in Node.js
+2. handles asynchronous non-blocking operations in Node.js
 
 **How?**
-    - Thread pool
-    - Event loop
+1. Thread pool
+2. Event loop
 
 # 39 : Thread Pool
 
 **Main thread:**
-    - "Hey libuv, I need to read file contents but that is a time consuming task. I don't want to block further code from being executed during this time. Can I offload this task to you?"
+1. "Hey libuv, I need to read file contents but that is a time consuming task. I don't want to block further code from being executed during this time. Can I offload this task to you?"
 
 **Libuv:**
-    - "Sure, main thread. Unlike you, who is single threaded, I have a pool of threads that I can use to run some of these time consuming tasks. When the task is done, the file contents are retrieved and the associated callback function can be run."
+1. "Sure, main thread. Unlike you, who is single threaded, I have a pool of threads that I can use to run some of these time consuming tasks. When the task is done, the file contents are retrieved and the associated callback function can be run."
 
 **Experiment 1 Inference**
-    - Every method in node.js that has the "sync" suffix always runs on the main thread and is blocking
+1. Every method in node.js that has the "sync" suffix always runs on the main thread and is blocking
 
 **Experiment 2 Inference**
-    - A few async methods like fs.readFile and crypto.pbkdf2 run on a separate thread in libuv's thread pool. They do run synchronously in their own thread but as far as the main thread is concerned, it appears as if the method is running asynchronously
+1. A few async methods like fs.readFile and crypto.pbkdf2 run on a separate thread in libuv's thread pool. They do run synchronously in their own thread but as far as the main thread is concerned, it appears as if the method is running asynchronously
 
 # 40 : Thread Pool Size
 
 - Libuv's thread pool has 4 threads
 
 **Experiment 3 Inference**
-    - By increasing the thread pool size, we are able to improve the total time taken to run multiple calls of an asynchronous method like pbkdf2
-    - Command for increase the size of thread pool : process.env.UV_THREADPOOL_SIZE = 5;
+1. By increasing the thread pool size, we are able to improve the total time taken to run multiple calls of an asynchronous method like pbkdf2
+2. Command for increase the size of thread pool : process.env.UV_THREADPOOL_SIZE = 5;
 
 - Increasing the thread pool size can help with performance but that is limited by the number of available CPU cores
 
@@ -410,18 +409,17 @@ image
 
 - https.request is a network input/output operation and not a CPU bound operation
 - It does not use the thread pool
-- Libuv instead delegates the work to the operating system kernel and whenever
-  possible, it will poll the kernel and see if the request has completed
+- Libuv instead delegates the work to the operating system kernel and whenever possible, it will poll the kernel and see if the request has completed
 
 **Summary**
-    - In Node.js, async methods are handled by libuv
-    - They are handled in two different ways 1. Native async mechanism 2. Thread pool
-    - Whenever possible, Libuv will use native async mechanisms in the OS so as to avoid blocking the main thread.
-    - Since this is part of the kernel, there is different mechanism for each OS. We have epoll for Linux, Kqueue for MacOS and 10 Completion Port on Windows
-    - Relying on native async mechanisms makes Node scalable as the only limitation is the operating system kernel
-    - Example of this type is a network 1/0 operation
-    - If there is no native async support and the task is file 1/0 or CPU intensive, libuv uses the thread pool to avoid blocking the main thread
-    - Although the thread pool preserves asynchronicity with respect to Node's main thread, it can still become a bottleneck if all threads are busy
+1. In Node.js, async methods are handled by libuv
+2. They are handled in two different ways 1. Native async mechanism 2. Thread pool
+3. Whenever possible, Libuv will use native async mechanisms in the OS so as to avoid blocking the main thread.
+4. Since this is part of the kernel, there is different mechanism for each OS. We have epoll for Linux, Kqueue for MacOS and 10 Completion Port on Windows
+5. Relying on native async mechanisms makes Node scalable as the only limitation is the operating system kernel
+6. Example of this type is a network 1/0 operation
+7. If there is no native async support and the task is file 1/0 or CPU intensive, libuv uses the thread pool to avoid blocking the main thread
+8. Although the thread pool preserves asynchronicity with respect to Node's main thread, it can still become a bottleneck if all threads are busy
 
 # 42 : Event Loop
 
@@ -434,27 +432,27 @@ image
 - Take a image of picture shown in the video at 10-25
 
 **Execution Order** 
-    - User written synchronous JavaScript code takes priority over async code that the
+1. User written synchronous JavaScript code takes priority over async code that the
     runtime would like to execute 
-    - Only after the call stack is empty, the event loop comes into picture
-    1. Any callbacks in the micro task queues are executed. First, tasks in the nextTick queue and only then tasks in the promise queue
-    2. All callbacks within the timer queue are executed
-    3. Callbacks in the micro task queues if present are executed. Again, first tasks in the nextTick queue and then tasks in the promise queue
-    4. All callbacks within the 1/0 queue are executed
-    5. Callbacks in the micro task queues if present are executed. nextTick queue followed by Promise queue.
-    6. All callbacks in the check queue are executed
-    7. Callbacks in the micro task queues if present are executed. Again, first tasks in the nextTick queue and then tasks in the promise queue
-    8. All callbacks in the close queue are executed
-    9. For one final time in the same loop, the micro task queues are executed. nextTick queue followed by promise queue. 
+2. Only after the call stack is empty, the event loop comes into picture
+    - Any callbacks in the micro task queues are executed. First, tasks in the nextTick queue and only then tasks in the promise queue
+    - All callbacks within the timer queue are executed
+    - Callbacks in the micro task queues if present are executed. Again, first tasks in the nextTick queue and then tasks in the promise queue
+    - All callbacks within the 1/0 queue are executed
+    - Callbacks in the micro task queues if present are executed. nextTick queue followed by Promise queue.
+    - All callbacks in the check queue are executed
+    - Callbacks in the micro task queues if present are executed. Again, first tasks in the nextTick queue and then tasks in the promise queue
+    - All callbacks in the close queue are executed
+    - For one final time in the same loop, the micro task queues are executed. nextTick queue followed by promise queue. 
     - If there are more callbacks to be processed, the loop is kept alive for one more run and the same steps are repeated - On the other hand, if all callbacks are executed and there is no more code to process, the event loop exits.
 
 **Few Questions**
     *Whenever an async task completes in libuv, at what point does Node decide to run the associated callback function on the call stack?*
-        Callback functions are executed only when the call stack is empty. The normal flow of execution fill not be interrupted to run a callback function
+- Callback functions are executed only when the call stack is empty. The normal flow of execution fill not be interrupted to run a callback function
     *What about async methods like setTimeout and setinterval which also delay the execution of a callback function?*
-        setTimeout and setinterval callbacks are given first priority
+- setTimeout and setinterval callbacks are given first priority
     *If two async tasks such as setTimeout and readFile complete at the same time, how does Node decide which callback function to run first on the call stack?*
-        Timer callbacks are executed before 1/0 callbacks even if both are ready at the exact same time
+- Timer callbacks are executed before 1/0 callbacks even if both are ready at the exact same time
 
 # 43 : Microtask Queues
 
