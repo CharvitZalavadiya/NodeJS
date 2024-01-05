@@ -33,10 +33,10 @@ image
 - Executing JavaScript with Node
 
 **Node REPL**
-   1. Read
-   2. Evaluate
-   3. Print
-   4. Loop
+1. Read
+2. Evaluate
+3. Print
+4. Loop
 
 - Executing code in a JavaScript file in the command line
 
@@ -54,133 +54,133 @@ image
 - In Node js, each file is treated as a separate module
 
 **Types of Modules**
-   1. Local modules - Modules that we create in our application
-   2. Built-in modules - Modules that Node.js ships with out of the box
-   3. Third party modules - Modules written by other developers that we can use in our application
+1. Local modules - Modules that we create in our application
+2. Built-in modules - Modules that Node.js ships with out of the box
+3. Third party modules - Modules written by other developers that we can use in our application
 
 # 9 : Local Modules
 
-**CommonJS :**\
-    -- CommonS is a standard that states how a module should be structured and shared\
-    -- Node.js adopted CommonJS when it started out and is what you will see in code bases
+**CommonJS :**
+1. CommonS is a standard that states how a module should be structured and shared
+2. Node.js adopted CommonJS when it started out and is what you will see in code bases
 
-**Summary :**\
-    -- In node.js, each file is a module that is isolated by default\
-    -- To load a module into another file, we use the require function\
-    -- When index.js is executed, the code in the module is also executed\
-    -- If the file we are requiring is a javascript file, we can skip specifying the extension and node.js will infer it on our behalf
+**Summary :**
+1. In node.js, each file is a module that is isolated by default
+2. To load a module into another file, we use the require function
+3. When index.js is executed, the code in the module is also executed
+4. If the file we are requiring is a javascript file, we can skip specifying the extension and node.js will infer it on our behalf
 
 # 10 : Module Exports
 
--- Module export name and import in index file name are not necessary to be same they can be different also or same also\
+- Module export name and import in index file name are not necessary to be same they can be different also or same also
 
 # 11 : Module Scope
 
 **IIFE in node :**
-    - Before a module's code is executed, Node.js will wrap it with a function wrapper that provides module scope
-    - This saves us from having to worry about conflicting variables or functions
-    - There is proper encapsulation and reusability is unaffected
+1. Before a module's code is executed, Node.js will wrap it with a function wrapper that provides module scope
+2. This saves us from having to worry about conflicting variables or functions
+3. There is proper encapsulation and reusability is unaffected
 
 **Summary :**
-    - Each loaded module in Node. js is wrapped with an lIFE that provides private scoping of code
-    - lIFE allows you to repeat variable or function names without any conflicts
+1. Each loaded module in Node. js is wrapped with an lIFE that provides private scoping of code
+2. lIFE allows you to repeat variable or function names without any conflicts
 
--- IIFE = Imediate Invoke Function Expression\
+- IIFE = Imediate Invoke Function Expression
 
 # 12 : Module Wrapper
 
--- Every module in node js gets wrapped in an lIFE before being loaded\
--- IIFE helps keep top-level variables scoped to the module rather than the global object\
--- The lIFE that wraps every module contains 5 parameters which are pretty important for the functioning of a module\
+- Every module in node js gets wrapped in an lIFE before being loaded
+- IIFE helps keep top-level variables scoped to the module rather than the global object
+- The lIFE that wraps every module contains 5 parameters which are pretty important for the functioning of a module
 
--- (function(exports, require, module, **filename, **dirname) {\
+- (function(exports, require, module, **filename, **dirname) {\
   const superHero = "Batman";\
   console.log (superHero) ;\
   })
 
 # 13 : Module Caching
 
--- See the code comments in file number 13\
+- See the code comments in file number 13
 
 # 14 : Import Export Patterns
 
--- See the code comments in file number 14 and 06\
+- See the code comments in file number 14 and 06
 
 # 15 : Module.exports vs Exports
 
--- See the code comments in file number 15\
+- See the code comments in file number 15
 
 # 16 : ES Modules
 
 **CommonJS :**
-     - Each file is treated as a module
-     - Variables, functions, classes, etc. are not accessible to other files by default
-     - Explicitly tell the module system which parts of your code should be exported via module.exports or exports
-     - To import code into a file, use the require() function
+1. Each file is treated as a module
+2. Variables, functions, classes, etc. are not accessible to other files by default
+3. Explicitly tell the module system which parts of your code should be exported via module.exports or exports
+4. To import code into a file, use the require() function
 
 **ES Modules :**
-    - At the time Node.js was created, there was no built-in module system in JavaScript
-    - Node js defaulted to CommonS as its module system
-    - As of ES2015, JavaScript does have a standardized module system as part of the language itself
-    - That module system is called EcmaScript Modules or ES Moc Codevolution M for short
+1. At the time Node.js was created, there was no built-in module system in JavaScript
+2. Node js defaulted to CommonS as its module system
+3. As of ES2015, JavaScript does have a standardized module system as part of the language itself
+4. That module system is called EcmaScript Modules or ES Moc Codevolution M for short
 
 **Summary :**
-    - ES Modules is the ECMAScript standard for modules
-    - It was introduced with ES2015
-    - Node.js 14 and above support ES Modules
-    - Instead of module.exports, we use the export keyword
-    - The export can be default or named
-    - We import the exported variables or functions using the import keyword
-    - If it is a default export, we can assign any name while importing
-    - If it is a named export, the import name must be the same
+1. ES Modules is the ECMAScript standard for modules
+2. It was introduced with ES2015
+3. Node.js 14 and above support ES Modules
+4. Instead of module.exports, we use the export keyword
+5. The export can be default or named
+6. We import the exported variables or functions using the import keyword
+7. If it is a default export, we can assign any name while importing
+8. If it is a named export, the import name must be the same
 
--- See the code of both file 16\
+- See the code of both file 16
 
 # 17 : Importing JSON and Watch Mode
 
 **Importing JSON :**
-    - JavaScript Object Notation
-    - A data interchange format commonly used with web servers
+1. JavaScript Object Notation
+2. A data interchange format commonly used with web servers
 
--- To enter watch mode hit the command "node --watch filename"\
--- Watch mode is the new feature from node in that when there is a change in your file then it automatically runs the file you need not to have press the run file button\
--- To exit watch mode hit the command "ctrl + c"\
+- To enter watch mode hit the command "node --watch filename"
+- Watch mode is the new feature from node in that when there is a change in your file then it automatically runs the file you need not to have press the run file button
+- To exit watch mode hit the command "ctrl + c"
 
 # 18 : Built-in Modules
 
--- Modules that Node.js ships with\
--- Also referred to as core modules\
--- Import the module before you can use it\
-  • path
-  • events
-  • fs
-  • stream
-  • http
+- Modules that Node.js ships with
+- Also referred to as core modules
+- Import the module before you can use it
+1. path
+2. events
+3. fs
+4. stream
+5. http
 
 # 19 : Path Modules
 
--- See the only code of file 06 for from line 89\
+- See the only code of file 06 for from line 89
 
 **node: Protocol**
-    - Makes it perfectly clear that the import is a Node.js builtin module
-    - Makes the import identifier a valid absolute URL
-    - Avoids conflicts for future Node.js built-in modules
+1. Makes it perfectly clear that the import is a Node.js builtin module
+2. Makes the import identifier a valid absolute URL
+3. Avoids conflicts for future Node.js built-in modules
 
 # 20 Callback Pattern
 
 **Callbacks :**
-    - In JavaScript, functions are first class objects
-    - A function can be passed as an argument to a function
-    - A function can also be returned as values from other functions
+1. In JavaScript, functions are first class objects
+2. A function can be passed as an argument to a function
+3. A function can also be returned as values from other functions
 
 **Types of Callbacks :**
   *Synchronous callbacks*
-        -- A callback which is executed immediately is called a synchronous callback\
+        1. A callback which is executed immediately is called a synchronous callback
   *Asynchronous callbacks*
-        -- A callback that is often used to continue or resume code execution after an asynchronous operation has completed\
-        -- Callbacks are used to delay the execution of a function until a particular time or event has occurred\
-        -- In Node.js have an asynchronous nature to prevent blocking of execution\
-        -- Ex: reading data from a file, fetching data from a database or network request\
+        1. A callback that is often used to continue or resume code execution after an asynchronous operation has completed
+        2. Callbacks are used to delay the execution of a function until a particular time or event has occurred
+        3. In Node.js have an asynchronous nature to prevent blocking of execution
+        4. Ex: reading data from a file, fetching data from a database or network request
 
 # 21 : Events Module
 
