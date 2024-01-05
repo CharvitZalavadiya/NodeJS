@@ -52,21 +52,21 @@ image
 -- A module is an encapsulated and reusable chunk of code that has its own context\
 -- In Node js, each file is treated as a separate module\
 **Types of Modules**
-    - Local modules - Modules that we create in our application
-    - Built-in modules - Modules that Node.js ships with out of the box
-    - Third party modules - Modules written by other developers that we can use in our application
+    - Local modules - Modules that we create in our application\
+    - Built-in modules - Modules that Node.js ships with out of the box\
+    - Third party modules - Modules written by other developers that we can use in our application\
 
 # 9 : Local Modules
 
 **CommonJS :**
-    - CommonS is a standard that states how a module should be structured and shared
-    - Node.js adopted CommonJS when it started out and is what you will see in code bases
+    - CommonS is a standard that states how a module should be structured and shared\
+    - Node.js adopted CommonJS when it started out and is what you will see in code bases\
 
 **Summary :**
-    - In node.js, each file is a module that is isolated by default
-    - To load a module into another file, we use the require function
-    - When index.js is executed, the code in the module is also executed
-    - If the file we are requiring is a javascript file, we can skip specifying the extension and node.js will infer it on our behalf
+    - In node.js, each file is a module that is isolated by default\
+    - To load a module into another file, we use the require function\
+    - When index.js is executed, the code in the module is also executed\
+    - If the file we are requiring is a javascript file, we can skip specifying the extension and node.js will infer it on our behalf\
 
 # 10 : Module Exports
 
