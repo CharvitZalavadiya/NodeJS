@@ -176,7 +176,7 @@ image
 **Types of Callbacks :**
   *Synchronous callbacks*
 - A callback which is executed immediately is called a synchronous callback\
-*Asynchronous callbacks*
+    *Asynchronous callbacks*
 - A callback that is often used to continue or resume code execution after an asynchronous operation has completed
 - Callbacks are used to delay the execution of a function until a particular time or event has occurred
 - In Node.js have an asynchronous nature to prevent blocking of execution
@@ -464,11 +464,11 @@ image
 - Watch the video 10-50 to 12-55
 
 **process.nextTick**
-    - Use of process.nextTick is discouraged as it can cause the rest of the event loop to starve
-    - If you endlessly call process.nextTick. the control will never make it past the microtask queue
-    - Two main reasons to use process.nextTick
-        1. To allow users to handle errors, cleanup any then unneeded resources, or perhaps try the request again before the event loop continues
-        2. To allow a callback to run after the call stack has unwound but before the event loop continues
+1. Use of process.nextTick is discouraged as it can cause the rest of the event loop to starve
+2. If you endlessly call process.nextTick. the control will never make it past the microtask queue
+3. Two main reasons to use process.nextTick
+    - To allow users to handle errors, cleanup any then unneeded resources, or perhaps try the request again before the event loop continues
+    - To allow a callback to run after the call stack has unwound but before the event loop continues
 
 # 44 : Timer Queue
 
