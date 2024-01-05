@@ -32,20 +32,20 @@ image
 - Executing JavaScript with Node
 
 1. Node REPL
-   • Read
-   • Evaluate
-   • Print
-   • Loop
+   - • Read
+   - • Evaluate
+   - • Print
+   - • Loop
 
 2. Executing code in a JavaScript file in the command line
 
 # 7 : Browser vs Node.js
 
-- In the browser, most of the time what you are doing is interacting with the DOM, or other Web Platform APIs like Cookies. You don't have the document, window and all the other objects that are provided by the browser
-- In the browser, we don't have all the nice APls that Node.js provides through its modules
-- For example the filesystem access functionality
-- With Node.js, you control the environment
-- With a browser you are at the mercy of what the users choose
+-- In the browser, most of the time what you are doing is interacting with the DOM, or other Web Platform APIs like Cookies. You don't have the document, window and all the other objects that are provided by the browser\
+-- In the browser, we don't have all the nice APls that Node.js provides through its modules\
+-- For example the filesystem access functionality\
+-- With Node.js, you control the environment\
+-- With a browser you are at the mercy of what the users choose
 
 # 8 : Modules
 
