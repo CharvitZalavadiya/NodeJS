@@ -448,9 +448,9 @@ image
 
 **Few Questions**
     *Whenever an async task completes in libuv, at what point does Node decide to run the associated callback function on the call stack?*
-- Callback functions are executed only when the call stack is empty. The normal flow of execution fill not be interrupted to run a callback function
+- Callback functions are executed only when the call stack is empty. The normal flow of execution fill not be interrupted to run a callback function\
     *What about async methods like setTimeout and setinterval which also delay the execution of a callback function?*
-- setTimeout and setinterval callbacks are given first priority
+- setTimeout and setinterval callbacks are given first priority\
     *If two async tasks such as setTimeout and readFile complete at the same time, how does Node decide which callback function to run first on the call stack?*
 - Timer callbacks are executed before 1/0 callbacks even if both are ready at the exact same time
 
