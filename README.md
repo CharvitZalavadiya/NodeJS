@@ -175,7 +175,7 @@ image
 
 **Types of Callbacks :**
   *Synchronous callbacks*
-- A callback which is executed immediately is called a synchronous callback
+- A callback which is executed immediately is called a synchronous callback\
   *Asynchronous callbacks*
 - A callback that is often used to continue or resume code execution after an asynchronous operation has completed
 - Callbacks are used to delay the execution of a function until a particular time or event has occurred
